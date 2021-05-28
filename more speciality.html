@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/economic.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="image/logo.png" class="logo" title="logo USG" alt="Logo">
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/graphdes.png" alt="Graphic design">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3> Graphic design </h3>
+                </div>
+                <p>
+                    Graphic design is based on applying a set of principles and working on a set of elements to create a
+                    communicative visual artwork that is based on the still image and takes a form printed or displayed
+                    on a two-dimensional surface.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/photography.jpg" alt="photography">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>Photography </h3>
+                </div>
+                <p>
+                    Photography is considered one of the most important disciplines in the twenty-first century
+                    worldwide, where people of all races need photographers on various daily occasions, such as weddings
+                    or birthdays, or to document a happy memory between friends and loved ones, so the profession of
+                    photography has been promoted recently. At the level of the whole world,
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/interdes.jpg" alt="Interior design">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>Interior design </h3>
+                </div>
+                <p>
+                    Interior architecture is the art of decorating an interior space like a room so that it is
+                    attractive, easy to use, and in line with the architecture. The goal of interior decorating is to
+                    provide some "feel" to a space. It includes applying wall paint, wallpaper, and other floors and
+                    ceilings, choosing furniture and fixtures such as lamps, providing suitable movement space as well
+                    as allocating spaces or spaces such as adding paintings, sculptures and carpets. Most of these
+                    studies take place within the interior architecture, decorators. Despite the interior conditions,
+                    decoration and interior designs are sometimes used interchangeably between the engineer and the
+                    owner to select and display interior items within the space, such as furniture, decorations, and
+                    accessories, and the design room. And interior designs, on the other hand.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/media.jpg" alt="media">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>Media</h3>
+                </div>
+                <p>
+                    Media or media studies is a specialty and field of study that researches the content, history and
+                    effects of various media, especially mass media. Media studies may draw on traditions drawn from
+                    both the social sciences and the humanities, but most of them are drawn from their core
+                    specializations in mass communication, communication and communication studies.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/tourism.jpg" alt="tourism">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>tourism</h3>
+                </div>
+                <p>The study of tourism is one of the interesting fields
+                    of study, which provides the student with the knowledge
+                    of various international cultures, which makes the study
+                    completely different, as well as provides them with a good
+                    financial return through job opportunities available
+                    in the field of tourism in all countries of the world,
+                    especially after the global trend to revitalize tourism
+                    and work to attract Tourists from all over the world,
+                    which made academic study in the field of tourism a prominent
+                    role and great importance that made
+                    many students around the world accept to study it.</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/sport.jpg" alt="sport">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>Physical education and sport</h3>
+                </div>
+                <p> The specialization aims to provide the student with how to teach most sports skills, prepare
+                    training programs for some individual and team sports, and provide him with the foundations and
+                    experiences that enable him to develop fitness programs commensurate with competitive sports and
+                    sports for all, and enable him to prepare and organize sports shows and festivals
+                    .</p>
+            </div>
+        </div>
+
+        <!--button to load more speciality-->
+        <button class="btn" id="load">Load More specialties</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.box').slice(0, 3).show();
+            $('#load').on('click', function (e) {
+                e.preventDefault();
+                $('.box:hidden').slice(0, 4).slideDown();
+                if ($('.box:hidden').length == 0) {
+                    $('#load').text('No More content').addClass('nobg');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

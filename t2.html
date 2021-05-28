@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 2</title>
+    <link rel="stylesheet" href="css/styletest.css">
+
+    <style>
+        * {
+            direction: rtl;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image/logo.png" class="logo" title="logo USG" alt="Logo">
+
+
+    <form action="istimara.php" method="post">
+        <div class="filter"></div>
+
+        <div class="ta">
+            <table class="tbl1">
+                <tr>
+                    <caption style="font-weight:bold;">اختر من A , B , C , D عشر مواد تفضلها أو تتميز فيها, ضع عدد المواد في الخانات الموجودة في الأسفل:</caption>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <th>A</th>
+                    <td>محاسبة ـ إدارة ـ فرائض فيزياء ميكانيكا
+                        ـ قانون إحصاء
+                        حاسب ـ فقه ـ رياضيات
+                        هندسة كهربائية ـ نحو
+                        عمارة وتخطيط ـ اقتصاد</td>
+                </tr>
+                <tr>
+                    <th>B</th>
+                    <td>
+                        كيمياء ـ فلك ـ زراعة ـ صيدلة ـ فرائض
+                        ـ إمالء ـ مكتبة وفهارس
+                        تأريخ ـ توحيد ـ حديث ـ أحياء ـ E
+                        قراءات ـ تفصيل و خياطة ـ تأريخ
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>C</th>
+                    <td>
+                        علم نفس ـ علم اجتماع ـ إعالم ـ تجويد ـ
+                        تفسير ـ علاقات ـ تربية
+                        تمريض ـ بلاغة ونقد
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>D</th>
+                    <td>
+                        جيولوجيا ـ هندسة معمارية ـ تقنية
+                        أدب ـ فلسفة ـ فكر وبحث ـ تجارة ـ
+                        جغرافيا ـ فنية ـ تمثيل ـ تعبير ـ موهبة
+                        تدبير منزلي
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+<div class="resu">
+        <label for="a">مجموع المواد من (A) </label>
+        <input id="a" type="number" min="0" max="10" name="a2">
+
+        <label for="b">مجموع المواد من (B) </label>
+        <input id="b" type="number" min="0" max="10" name="b2">
+
+        <label for="c">مجموع المواد من (C) </label>
+        <input id="c" type="number" min="0" max="10" name="c2">
+
+        <label for="d">مجموع المواد من (D) </label>
+        <input id="d" type="number" min="0" max="10" name="d2">
+    </div>
+    </form>
+    <a href="t3.html" target="_blank"> <button class="btn">Next</button> </a>
+ 
+</body>
+
+</html>

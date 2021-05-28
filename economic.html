@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/economic.css">
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <img src="image/logo.png" class="logo"title="logo USG" alt="Logo">
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/economy.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Economic sciences</h3>
+                <p>Economics is the method that contributes to making
+                    decisions about how to use limited resources to
+                    meet needs and desires. Economics is also
+                    defined as the science that studies the scarcity of
+                    human resources and how to use them. This specialization
+                    includes a wide range of study subjects such as
+                    recession and finance, wealth and others.</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/business.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Business Administration</h3>
+                <p>Business Administration in a way to qualify and
+                    train individuals to organize the work of companies
+                    or establishments, through several processes, including:
+                    direction, control, planning, and control, starting
+                    from preparing tax returns to supervising employees.
+                    Specialization Information pertaining to several areas;
+                    Such as administration, accounting, marketing,
+                    business decision-making,
+                    organization, and human resource management.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/accounting.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>accounting</h3>
+                <p>Financial Accounting is the recording of financial operations related
+                    to business, and it records economic events in a
+                    comprehensive and orderly manner. Accounting includes
+                    summarizing and analyzing those financial operations.
+                    ... as the accounting specialty is classified as one
+                    of the oldest fields concerned with financial matters,
+                    and it aims fundamentally to improve the performance
+                    of companies and institutions in the future.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/hr.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Human Resources</h3>
+                <p> The concept of human resources specialization refers
+                    to that administrative field that deals specifically
+                    with the human element in the department of work, that
+                    is, in all matters related to employees, including their
+                    entitlements, the employment of new people from them,
+                    the mechanism for conducting interviews, and others,
+                    so that specialists in this field work with a large group
+                    Of managers and executives in institutions or organizations,
+                    and their work is based on the strategic planning side,
+                    where their previous experiences are used to provide the
+                    best suggestions and ideas for changing employee policies.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/marketing.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Marketing</h3>
+                <p>Marketing is one of the administrative sciences that
+                    is responsible for managing all activities carried
+                    out by a company, institution, or project for the
+                    purpose of promoting services or products and pushing
+                    consumers to buy, or for the purpose of
+                    branding among different classes of the public.
+                    Digital marketing is used in most parts of the world.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/mis.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>M I S</h3>
+                </div>
+                <p>Management Information Systems, known as MIS, which
+                    are computerized systems designed to serve managers
+                    in the administrative organization, and it combines
+                    information technology, computer science, and management,
+                    and its goal is to build technological computer systems
+                    to help various institutions in carrying out their
+                    work, and perform many functions, Including: office
+                    assistance, carrying out accounting tasks, organizing
+                    meetings, and other matters that
+                    help institutions in the decision-making process.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/finance.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>finance</h3>
+                </div>
+                <p>Financing is identifying the needs of individuals,
+                    organizations, companies, and monetary resources
+                    and determining how to collect and use them while
+                    taking into account the risks associated with their
+                    projects. As for investment, it is any economic
+                    activity that has a return to the owner directly or indirectly.</p>
+            </div>
+        </div>
+<button class="btn" id="load">Load More specialties</button>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.box').slice(0,3).show();
+        $('#load').on('click', function(e)
+    {e.preventDefault();
+            $('.box:hidden').slice(0,4).slideDown();
+            if( $('.box:hidden').length==0){
+                $('#load').text('No More content').addClass('nobg');
+            }
+        });
+    });
+
+    </script>
+</body>
+
+</html>

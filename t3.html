@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 3</title>
+    <link rel="stylesheet" href="css/styletest.css">
+
+    
+</head>
+
+<body>
+    <img src="image/logo.png" class="logo" title="logo USG" alt="Logo">
+
+
+    <form action="istimara.php" method="post">
+        <div class="filter"></div>
+
+        <div class="ta">
+            <table class="tbl1">
+                <tr>
+                    <caption style="font-weight:bold;">اختر من A , B , C , D عشر مواد تفضلها أو تتميز فيها</caption>
+                </tr>
+                
+                <tr>
+                    <th>A</th>
+                    <td>فيزيائي ـ مهندس ـ محامي ـ محقق ـ
+                        ضابط ـ طيار ـ محاسب ـ مدير ـ إحصائي
+                        ـ تقني ـ مشرف ـ مخطط ـ ناقد</td>
+                </tr>
+                <tr>
+                    <th>B</th>
+                    <td> جندي ـ مدير تنفيذي ـ مراقب
+                        موظف إداري ـ محضر مختبر ـ مبرمج
+                        أمين مكتبة ـ موظف أرشيف
+                        مدقق حسابات ـ وكيل مدرسة ـ
+                        فني مختبرات ـ تقني و فني أشعة ـ مساعد
+                        مهندس ـ طبيب جراح </td>
+                </tr>
+
+                <tr>
+                    <th>C</th>
+                    <td>مرشد طالبي ــ طبيب عام ـ
+                        معلم تربية خاصة ـ موظف إغاثي ـ موظف
+                        عالقات عامة ـ سكرتير ـ
+                        موظف استقبال ـ إمام وخطيب ـ
+                        اختصاصي نفسي ـ مسوق ـ مساعد مدير
+                        مستشار اجتماعي </td>
+                </tr>
+
+                <tr>
+                    <th>D</th>
+                    <td>مرشد سياحي ـ رجل أعمال ـ تاجر عقار
+                        رائد نشاط ـ مصمم برامج ـ مخترع ـ
+                        فنان تشكيلي ـ أديب ـ شاعر ـ
+                        مقدم تليفزيوني ـ مصمم إعالنات ـ مكتشف
+                        آثار ـ مهندس معماري </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="r3">
+            <label for="a">مجموع المواد من (A) </label>
+            <input id="a" type="number" min="0" max="10" name="a3">
+
+            <label for="b">مجموع المواد من (B) </label>
+            <input id="b" type="number" min="0" max="10" name="b3">
+
+            <label for="c">مجموع المواد من (C) </label>
+            <input id="c" type="number" min="0" max="10" name="c3">
+
+            <label for="d">مجموع المواد من (D) </label>
+            <input id="d" type="number" min="0" max="10" name="d3">
+        </div>
+    </form>
+
+    <div class="allre">
+
+        <form action="istimara.php" method="post">
+            <table>
+                <tr>
+                    <caption>ضع النتائج في الجدول التالي :</caption>
+                </tr>
+                <tr>
+                    <th>الاختبار</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                </tr>
+
+                <tr>
+                    <th>الاول</th>
+                    <td><input type="number" min="1" max="30" name="a1"></td>
+                    <td><input type="number" min="1" max="30" name="b1"></td>
+                    <td><input type="number" min="1" max="30" name="c1"></td>
+                    <td><input type="number" min="1" max="30" name="d1"></td>
+                </tr>
+                <tr>
+                    <th>الثاني</th>
+                    <td><input type="number" min="1" max="30" name="a2"></td>
+                    <td><input type="number" min="1" max="30" name="b2"></td>
+                    <td><input type="number" min="1" max="30" name="c2"></td>
+                    <td><input type="number" min="1" max="30" name="d2"></td>
+                </tr>
+                <tr>
+                    <th>الثالث</th>
+                    <td><input type="number" min="1" max="30" name="a3"></td>
+                    <td><input type="number" min="1" max="30" name="b3"></td>
+                    <td><input type="number" min="1" max="30" name="c3"></td>
+                    <td><input type="number" min="1" max="30" name="d3"></td>
+                </tr>
+                <tr>
+                    <th>الرابع</th>
+                    <td><input type="number" min="1" max="30" name="a4"></td>
+                    <td><input type="number" min="1" max="30" name="b4"></td>
+                    <td><input type="number" min="1" max="30" name="c4"></td>
+                    <td><input type="number" min="1" max="30" name="d4"></td>
+                </tr>
+
+
+            </table>
+            <input id="show" type="Submit" value="Show result" name='submit' />
+
+        </form>
+    </div>
+</body>
+
+</html>

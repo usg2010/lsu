@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/economic.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="image/logo.png" class="logo" title="logo USG" alt="Logo">
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/geo.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Geography</h3>
+                <p>Geography is the science of describing the Earth,
+                    as it studies the topography and population distribution
+                    and takes care of the study of the earth and its characteristics
+                    and natural phenomena (earthquakes, volcanoes, hurricanes
+                    and other phenomena that affect the earth) in a more
+                    precise sense, geography studies the coherence of the
+                    universe, just as geography interferes with other sciences
+                    such as economics, general sciences and geology, and
+                    this Science is concerned with the study of climate,
+                    human distribution, regions, plants
+                    and animals, agriculture, industry and commerce.</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/history.jpg" alt="history">
+            </div>
+            <div class="content">
+                <h3>History</h3>
+                <p>History is a science that provides complete knowledge
+                    of the history of all civilizations, including Arab,
+                    Islamic, and modern world civilizations. It also
+                    provides an account of all the historical events
+                    that occurred in various countries, as well as the
+                    sciences. However, the discipline of history focuses
+                    primarily on political aspects and experiences.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/political.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Political science</h3>
+                <p>Political science Political science is one of the
+                     branches of sociology, and it studies political
+                      theory, describing and analyzing political systems
+                       and their political behavior and their social and 
+                       international implications. And international
+                     relations between nations and their history,</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/law.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Law</h3>
+                <p> Law It is a social science that studies a set of
+                     general rules and laws, which in turn work to 
+                     regulate social relations between members of 
+                     society, provided that all members of society
+                     adhere to them without differentiating them..</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/sociology.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Social sciences</h3>
+                <p>Social sciences it is a branch of science 
+                    related to human behavior that includes its social and 
+                    cultural aspects, and is sometimes used to refer to psychology,
+                     sociology, politics, economics, history, and law,
+                     and often includes social and economic geography.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/psycho.png" alt="spe1">
+            </div>
+            <div class="content">
+                <div class="h">
+                    <h3>Psychology</h3>
+                </div>
+                <p>Psychology is the scientific study of behavior, the ability
+                     to control and predict it, and it is the study of thinking,
+                      the mind and personality, and work to analyze them accurately
+                       and identify the different patterns of it, and apply
+                        what has been studied on the ground, in order to know 
+                        the psychological problems that a person faces, and
+                     strive to solve them And treat it from the roots.</p>
+            </div>
+        </div>
+
+       
+        <button class="btn" id="load">Load More specialties</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.box').slice(0, 3).show();
+            $('#load').on('click', function (e) {
+                e.preventDefault();
+                $('.box:hidden').slice(0, 4).slideDown();
+                if ($('.box:hidden').length == 0) {
+                    $('#load').text('No More content').addClass('nobg');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

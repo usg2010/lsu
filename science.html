@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/economic.css">
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <img src="image/logo.png" class="logo"title="logo USG" alt="Logo">
+       
+       
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/physics.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Physics</h3>
+                <p>It is the science that studies basic concepts,
+                    such as sound, light and motion, and it is the
+                    science that attempts to understand the laws of
+                    nature and the relationship between energy and matter.
+                    Physics deals with particles to black holes and the
+                    general structure of the universe. Mathematical formulas
+                    are used to try to explain theories and make predictions.
+                </p>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/bio.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Biology </h3>
+                <p>Biology is a branch of science specialized
+                    in the study of plants, animals, bacteria,
+                    viruses and all microorganisms, and the
+                    aim of it is to know the nature of these
+                    organisms' life and existence, how they reproduce,
+                    their diseases, and methods of treatment.
+                </p>
+            </div>
+        </div>
+     
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/chemistry.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Chemistry</h3>
+                <p> chemistry is the science that studies matter
+                    and the changes that occur to it, specifically
+                    by studying its properties, structure, structure,
+                    behavior, interactions and what it causes through it.
+                    Chemistry studies the atoms and the bonds that occur between them.
+                </p>
+         
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/cs.png" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Computer science </h3>
+                <p> Computer science major is interested in studying
+                    the mechanisms of computers in addressing and
+                    solving complex problems, by using mathematical
+                    analysis and algorithms using different programming
+                    languages, and it is also interested in studying
+                    how to protect programs and networks. The major
+                    focuses on Software and Data Systems, Network
+                    and Information Security.</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/biochem.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Biochemistry</h3>
+                <p>Biochemistry is one of the branches of natural sciences and it is
+                    specialized in studying the chemical composition
+                    of cell parts in various living organisms, whether
+                    they are simple organisms such as (bacteria, fungi and
+                    algae) or as complex as humans, animals and plants.</p>
+                     </div>
+        </div>
+
+
+        <div class="box">
+            <div class="imgbx">
+                <img src="img_spe/math.jpg" alt="spe1">
+            </div>
+            <div class="content">
+                <h3>Math </h3>
+            <p> Mathematics is the science of studying abstract
+                structures using logic, mathematical proofs and
+                mathematical notation, and it is the backbone of
+                most modern sciences that have contributed to
+                the development of mankind over the past centuries,
+                especially in physics and chemistry, It became one of
+                the modern applied sciences intertwined with all
+                other sciences, representing a prominent
+                position in scientific studies in colleges.</p>
+            </div>
+        </div>
+
+
+
+
+<button class="btn" id="load">Load More specialties</button>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.box').slice(0,3).show();
+        $('#load').on('click', function(e)
+    {e.preventDefault();
+            $('.box:hidden').slice(0,4).slideDown();
+            if( $('.box:hidden').length==0){
+                $('#load').text('No More content').addClass('nobg');
+            }
+        });
+    });
+
+    </script>
+</body>
+
+</html>
